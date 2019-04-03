@@ -1,0 +1,33 @@
+#initialize repo
+git init
+#do this once; personalize git
+git config --global user.name "Lukas"
+git config --global user.email "Lukas.Grinninger@gmail.com"
+#check what's going on
+git status
+#stage files to be committed
+git add . 
+git add -A
+git add filename.txt
+#commit files
+git commit -m "message"
+#commit history
+git log
+#show differences between commits
+git show
+#revert to earlier commit
+git checkout <identifier> files
+
+#change address to push repo to 
+git remote add origin https://github.com/LuGri/testproj.git
+#check address where repos are pushed/pulled
+git remote -v
+#push repo to github
+git push origin master 
+#set default
+git push --set-upstream origin master
+#now you can only write
+git push
+#or
+git pull
+
